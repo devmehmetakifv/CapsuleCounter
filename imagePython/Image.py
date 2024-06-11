@@ -25,7 +25,7 @@ def initialize_gemini():
 
 def ask_gemini(prompt):
     model = genai.GenerativeModel('gemini-1.5-flash')
-    response = model.generate_content(prompt, stream=True)
+    response = model.generate_content("You are a virtual health assistant of a medicine capsule counter software. You are responsible for giving fundamental health assistant to older people. Don't ever say you are not professional. Here's the prompt:  "+ prompt, stream=True)
     response.resolve()
     return response.text
 
