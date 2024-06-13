@@ -1,1 +1,1 @@
-capsule counter projecct
+Capsule Counter Projecct
